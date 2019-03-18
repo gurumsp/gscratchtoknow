@@ -1,0 +1,113 @@
+body {
+  font-family: 'Baloo Chettan', cursive;
+  color: white;
+}
+
+header, footer {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+h2 {
+  font-family: 'Monoton', cursive;
+}
+
+h4 {
+  font-size: 0.75em;
+}
+
+div {
+  padding-bottom: 2em;
+}
+
+.bigfont {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.canvas {
+  top: 0;
+  margin: 2em;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+canvas {
+  background-image: url("..//img//guesswhat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.containerbg {
+  background-image: linear-gradient(to top,rgba(74, 107, 138, 1) 0%, rgba(19, 50, 83, 1) 100%) ;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("..//img//fam.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: rgba(110, 127, 148, 0.5)
+}
+
+.hide {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.show {
+  /* display: inline-block; */
+  visibility: visible;
+  animation: showMessage 5s 1;
+}
+
+.detailwelcome {
+  animation: zoomgame 5s infinite;
+}
+
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 50px;
+  animation: pulse 0.3s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+@keyframes showMessage {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {  opacity: 1; }
+}
+
+@keyframes zoomgame {
+  0%   {transform: scale(1);}
+  25%  {transform: scale(1.1);}
+  50%  {transform: scale(1);}
+  75%  {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
